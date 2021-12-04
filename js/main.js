@@ -621,7 +621,7 @@ function upload(file) {
     }
   };
 
-  xhr.open("POST", "upload", true);
+  xhr.open("POST", "applications", true);
   xhr.send(file);
 
 }
