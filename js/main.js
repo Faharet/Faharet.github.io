@@ -608,16 +608,16 @@ function upload(file) {
 
   // обработчик для отправки
   xhr.upload.onprogress = function(event) {
-    log(event.loaded + ' / ' + event.total);
+    console.log(event.loaded + ' / ' + event.total);
   }
 
   // обработчики успеха и ошибки
   // если status == 200, то это успех, иначе ошибка
   xhr.onload = xhr.onerror = function() {
     if (this.status == 200) {
-      log("success");
+      console.log("success");
     } else {
-      log("error " + this.status);
+      console.log("error " + this.status);
     }
   };
 
